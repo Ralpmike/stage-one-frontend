@@ -1,18 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const img = document.querySelector('img[data-testid="slackProfilePicture"]');
-  img.onload = function () {
-    console.log('Natural Width: ', img.naturalWidth);  // Outputs 300
-    console.log('Natural Height: ', img.naturalHeight); // Outputs 300
-    console.log('Displayed Width: ', img.width);       // Should output 300
-    console.log('Displayed Height: ', img.height);     // Should output 300
-
-    // Ensure the image is displayed at its natural size
-    if (img.width !== img.naturalWidth || img.height !== img.naturalHeight) {
-      console.error('Image is not displayed at its natural dimensions.');
-    }
-
-  };
-});
 
 function updateTimeAndDay() {
   const currentTimeElement = document.getElementById('currentUTCTime');
